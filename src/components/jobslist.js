@@ -36,7 +36,7 @@ const JobsList = (props) => {
   return (
     <div>
       <table className="table">
-        <thead className={props.locale.startsWith("es") ? "thead-light" : "thead-dark"}>
+      <thead style={{ backgroundColor: props.locale.startsWith("es") ? "#f8f9fa" : "#343a40", color: props.locale.startsWith("es") ? "#000" : "#fff" }}>
           <tr>
             <th scope="col">#</th>
             <th scope="col"><FormattedMessage id="Position" /></th>
